@@ -6,14 +6,14 @@ import { CurrentQuestion } from './CurrentQuestion'
 
 export const WelcomePage = () => {
 
-  const [startQuiz, setStartQuiz] = useState(true)
+  const [startQuiz, setStartQuiz] = useState(false)
 
   const handleStartQuiz = () => {
-    setStartQuiz(false)
+    setStartQuiz(true)
   }
   return (
     <>
-    { startQuiz ?  
+    { !startQuiz ?  
       <div>
         hello 
         <button onClick={ handleStartQuiz}> START QUIZ</button>
