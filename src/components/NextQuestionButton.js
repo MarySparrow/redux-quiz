@@ -13,6 +13,5 @@ export const NextQuestionButton = () => {
       Next Question
     </button>
   )
-
 }
 

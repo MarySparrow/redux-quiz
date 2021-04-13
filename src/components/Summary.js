@@ -8,9 +8,12 @@ export const Summary = () => {
   const correctAnswersCount = answers.filter(answer => answer.isCorrect === true).length
   
   return (
-    <div>
-     Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
-    </div>
+    <>
+      <div>
+      Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
+      </div>
+      <button>RESTART</button>
+    </>
   )
 
 }
