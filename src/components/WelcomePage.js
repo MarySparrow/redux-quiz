@@ -15,7 +15,9 @@ export const WelcomePage = () => {
     { !startQuiz ?  
       <div className='welcome-container'>
         <div className="title">
-          Quiz bout wonderful Foxes!
+          Quiz bout Foxes!
+        </div>
+        <div className="sub-title">
           Do you want to try it out?
         </div>
         <button onClick={ handleStartQuiz}> START QUIZ</button>
