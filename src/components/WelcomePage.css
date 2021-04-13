@@ -1,0 +1,10 @@
+.welcome-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}

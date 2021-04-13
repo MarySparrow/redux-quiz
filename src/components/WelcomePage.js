@@ -13,8 +13,11 @@ export const WelcomePage = () => {
   return (
     <>
     { !startQuiz ?  
-      <div>
-        Hej 
+      <div className='welcome-container'>
+        <div className="title">
+          Quiz bout wonderful Foxes!
+          Do you want to try it out?
+        </div>
         <button onClick={ handleStartQuiz}> START QUIZ</button>
       </div>
     : 
