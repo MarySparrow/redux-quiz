@@ -9,7 +9,7 @@ export const Summary = () => {
   
   return (
     <div>
-     Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
+     Hello!Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
     </div>
   )
 
