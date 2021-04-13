@@ -1,7 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
 import './Summary.css'
-// import summaryphoto from '../images/summaryphoto.png'
 
 export const Summary = () => {
   const questionArray = useSelector((state) => state.quiz.questions)
