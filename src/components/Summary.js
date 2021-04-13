@@ -1,3 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable linebreak-style */
 import React from 'react'
 import { useSelector } from 'react-redux'
 
@@ -8,12 +11,9 @@ export const Summary = () => {
   const correctAnswersCount = answers.filter(answer => answer.isCorrect === true).length
   
   return (
-    <>
-      <div>
-      Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
-      </div>
-      <button>RESTART</button>
-    </>
+    <div>
+     !Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
+    </div>
   )
 
 }

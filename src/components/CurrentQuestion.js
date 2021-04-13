@@ -1,10 +1,11 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-
 import { quiz } from '../reducers/quiz'
+import './CurrentQuestion.css'
+
 import {Summary} from './Summary'
 import {ProgressBar} from './ProgressBar'
-import {NextQuestionButton} from './NextQuestionButton'
+
 
 export const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
@@ -13,6 +14,10 @@ export const CurrentQuestion = () => {
   const currentQuestionIndex = useSelector((state) => state.quiz.currentQuestionIndex)
 
   const dispatch = useDispatch() 
+
+  const onSubmitAnswer = () => {
+    dispatch(quiz.actions.goToNextQuestion())
+  }
 
   const onAnswerSelection = (index) => {
     dispatch(quiz.actions.submitAnswer( { questionId: question.id, answerIndex: index} ))
@@ -44,7 +49,7 @@ export const CurrentQuestion = () => {
   return (
     <>
       { !quizOver ?
-      <div>
+      <div className='questions-card'>
         <ProgressBar />
         <h1>Question: {question.questionText}</h1>
         {question.options.map((option, index) => 
@@ -55,7 +60,9 @@ export const CurrentQuestion = () => {
           onClick={() => onAnswerSelection(index)}> {option} 
          </button> 
         )}
-        <NextQuestionButton />
+        <button onClick= {onSubmitAnswer}>
+          Check Answer
+        </button>
       </div>
      : 
      <Summary />}
