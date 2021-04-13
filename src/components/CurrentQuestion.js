@@ -42,7 +42,7 @@ export const CurrentQuestion = () => {
     }
     // By default, return empty string (in the future you can add generic class here)
     else {
-      return ""
+      return "option-button"
     }
   }
 
@@ -50,19 +50,23 @@ export const CurrentQuestion = () => {
     <>
       { !quizOver ?
       <div className='questions-card'>
-        <ProgressBar />
-        <h1>Question: {question.questionText}</h1>
-        {question.options.map((option, index) => 
-         <button 
-          className={generateClassNames(index)}
-          disabled={answers.length === currentQuestionIndex + 1} 
-          key ={option} 
-          onClick={() => onAnswerSelection(index)}> {option} 
-         </button> 
-        )}
-        <button onClick= {onSubmitAnswer}>
-          Check Answer
-        </button>
+        <div className="question-container">
+          <ProgressBar />
+          <h1 className='question'>{question.questionText}</h1>
+        </div>
+        <div className="options">
+          {question.options.map((option, index) => 
+          <button 
+            className={generateClassNames(index)}
+            disabled={answers.length === currentQuestionIndex + 1} 
+            key ={option} 
+            onClick={() => onAnswerSelection(index)}> {option} 
+          </button> 
+          )}
+          <button className='next-question-button' onClick= {onSubmitAnswer}>
+            Next Question
+          </button>
+        </div>
       </div>
      : 
      <Summary />}

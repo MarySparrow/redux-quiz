@@ -1,4 +1,57 @@
 
 .questions-card {
-    background-color: red;
+    background-color: #571845;
+    height: 300px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: row; 
+    padding: 20px;
+    border-radius: 20px;
+    color: #fff;
+}
+.next-question-button {
+    margin-top: 40px;
+    width: 150px;
+    padding: 7px 0;
+    border: 5px solid #900c3e;
+    border-radius: 10px;
+    background: #fff;
+    color: #571845;
+    font-size: 16px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.option-button {
+    width: 200px;
+    margin-top: 15px;
+    padding: 7px 0;
+    border: 5px solid #900c3e;
+    border-radius: 10px;
+    background: #571845;
+    color: #fff;
+    font-size: 16px;
+}
+
+.question {
+    font-size: 20px;
+}
+
+.question-container {
+    width: 50%;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+
+}
+
+.progress-bar {
+    font-size: 35px;
+    text-decoration: underline;
 }

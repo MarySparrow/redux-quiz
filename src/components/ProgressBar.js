@@ -7,7 +7,7 @@ export const ProgressBar = () => {
   const questionArray = useSelector((state) => state.quiz.questions)
 
   return (
-      <div>
+      <div className='progress-bar'>
         Question: {currentQuestionIndex +1}/{questionArray.length}
       </div>
   )
