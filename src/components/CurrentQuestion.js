@@ -13,12 +13,8 @@ export const CurrentQuestion = () => {
 console.log(answers)
   const dispatch = useDispatch() 
 
-  console.log(quizOver)
-
-
   const onSubmitAnswer = () => {
     dispatch(quiz.actions.goToNextQuestion())
-
   }
 
   const onAnswerSelection = (index) => {
