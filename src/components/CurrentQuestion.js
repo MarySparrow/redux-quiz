@@ -14,8 +14,6 @@ export const CurrentQuestion = () => {
 
   const dispatch = useDispatch() 
 
-  
-
   const onAnswerSelection = (index) => {
     dispatch(quiz.actions.submitAnswer( { questionId: question.id, answerIndex: index} ))
     console.log(index)
