@@ -4,8 +4,6 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit'
 import { quiz } from 'reducers/quiz'
 import {WelcomePage} from './components/WelcomePage'
 
-// import { CurrentQuestion } from 'components/CurrentQuestion'
-
 const reducer = combineReducers({
   quiz: quiz.reducer
 })
@@ -16,7 +14,6 @@ export const App = () => {
   return (
     <Provider store={store}>
       <WelcomePage />
-      {/* <CurrentQuestion /> */}
     </Provider>
   )
 }
