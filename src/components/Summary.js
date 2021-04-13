@@ -1,3 +1,6 @@
+/* eslint-disable arrow-parens */
+/* eslint-disable no-trailing-spaces */
+/* eslint-disable linebreak-style */
 import React from 'react'
 import { useSelector } from 'react-redux'
 
@@ -9,7 +12,7 @@ export const Summary = () => {
   
   return (
     <div>
-     Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
+     !Great job, you answered {correctAnswersCount} out of {questionArray.length}questions correctly! 
     </div>
   )
 
