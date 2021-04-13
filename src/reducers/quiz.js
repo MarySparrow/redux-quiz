@@ -2,11 +2,11 @@ import { createSlice } from '@reduxjs/toolkit'
 
 // Change these to your own questions!
 const questions = [
-  { id: 1, questionText: 'Who set the Olympic record for the 100m dash in 2012?', options: ['Usain Bolt', 'Justin Gatlin', 'Tyson Gay', 'Asafa Powell'], correctAnswerIndex: 0 },
-  { id: 2, questionText: 'When was Michael Phelps last named male World Swimmer of the Year?', options: ['2012', '2014', '2016', '2018'], correctAnswerIndex: 2 }, 
-  { id: 3, questionText: 'Question 3?', options: ['option 1', 'option 2', 'option 3', 'option 4'], correctAnswerIndex: 0 },
-  { id: 4, questionText: 'Question 4?', options: ['option 1', 'option 2', 'option 3', 'option 4'], correctAnswerIndex: 0 },
-  { id: 5, questionText: 'Question 5?', options: ['option 1', 'option 2', 'option 3', 'option 4'], correctAnswerIndex: 0 }
+  { id: 1, questionText: 'What is the maximum length	of an adult fox (tail included)?', options: ['90cm', '100cm', '120cm', '150cm'], correctAnswerIndex: 0 },
+  { id: 2, questionText: 'Who takes care of the baby foxes(cubs)?', options: ['the female', 'the male', 'both the male and female', 'none'], correctAnswerIndex: 2 }, 
+  { id: 3, questionText: 'What is the average life span of an adult fox?', options: ['10 years', '14 years', '18 years', '20 years'], correctAnswerIndex: 0 },
+  { id: 4, questionText: 'When do foxes hunt for food?', options: ['at night', 'during the day', 'both night and day', 'in the morning'], correctAnswerIndex: 0 },
+  { id: 5, questionText: 'How fast can foxes run?', options: ['about 32km per hour', 'over 40km per hour', 'over 46km per hour', 'more than 58km per hour'], correctAnswerIndex: 0 }
 ]
 
 const initialState = {

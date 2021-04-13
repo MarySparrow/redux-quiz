@@ -14,13 +14,11 @@ export const WelcomePage = () => {
     <>
     { !startQuiz ?  
       <div className='welcome-container'>
-        <div className="title">
-          Quiz bout Foxes!
+        <div className="text-container">
+          <h1 className='title'>Quiz bout Foxes!</h1>
+          <h2 className='sub-title'>Do you want to try it out?</h2>
         </div>
-        <div className="sub-title">
-          Do you want to try it out?
-        </div>
-        <button onClick={ handleStartQuiz}> START QUIZ</button>
+        <button className='start-button' onClick={ handleStartQuiz}> START QUIZ</button>
       </div>
     : 
     <CurrentQuestion /> }

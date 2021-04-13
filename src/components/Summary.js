@@ -11,9 +11,8 @@ export const Summary = () => {
   
   return (
     <div className="summary-container">
-     <p>Great job!</p> 
-     <p>You answered {correctAnswersCount} out of {questionArray.length} questions correctly!</p>
-     {/* <img src={summaryphoto} className="summary-image" alt="group of foxes" /> */}
+      <p>Great job!</p> 
+      <p>You answered {correctAnswersCount} out of {questionArray.length} questions correctly!</p>
     </div>
   )
 

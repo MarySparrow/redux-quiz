@@ -9,6 +9,7 @@ body {
   justify-content: center;
   align-items:center;
   height: 100vh;
+  background-image: url("../src/images/foxes.jpg");
 }
 
 code {
@@ -16,8 +17,8 @@ code {
     monospace;
 }
 .correct {
-  margin-top: 20px;
-  width: 150px;
+  margin-top: 15px;
+  width: 200px;
   padding: 7px 0;
   border: 5px solid green;
   border-radius: 10px;
@@ -28,8 +29,8 @@ code {
   align-self: flex-end;
 }
 .incorrect {
-  margin-top: 20px;
-  width: 150px;
+  margin-top: 15px;
+  width: 200px;
   padding: 7px 0;
   border: 5px solid red;
   border-radius: 10px;
@@ -39,3 +40,53 @@ code {
   font-weight: bold;
   align-self: flex-end;
 }
+
+.welcome-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  background-color: #571845;
+  color: #571845;
+  width: 100vw;
+  background-image: url("../src/images/foxes.jpg")
+
+}
+
+.text-container {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.294);
+  padding: 20px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-size: 62px;
+  padding-bottom: 54px;
+}
+
+.sub-title {
+  display: flex;
+  flex-direction: column;
+  font-size: 52px;
+  padding-bottom: 50px;
+}
+
+.start-button {
+  width: 200px;
+  height: 80px;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: #571845;
+  color: #fff;
+  transition: 0.1s ease-in;
+}
+
+.start-button:hover {
+  background-color: #742d5f;
+}
+
