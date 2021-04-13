@@ -1,3 +1,4 @@
+/* eslint-disable object-curly-spacing */
 import React, {useState} from 'react'
 
 import { CurrentQuestion } from './CurrentQuestion'
@@ -13,7 +14,7 @@ export const WelcomePage = () => {
     <>
     { !startQuiz ?  
       <div>
-        hello 
+        Hej 
         <button onClick={ handleStartQuiz}> START QUIZ</button>
       </div>
     : 
