@@ -1,8 +1,10 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
+
 import { quiz } from '../reducers/quiz'
 import {Summary} from './Summary'
 import {ProgressBar} from './ProgressBar'
+import {NextQuestionButton} from './NextQuestionButton'
 
 export const CurrentQuestion = () => {
   const question = useSelector((state) => state.quiz.questions[state.quiz.currentQuestionIndex])
@@ -10,12 +12,9 @@ export const CurrentQuestion = () => {
   const answers = useSelector((state) => state.quiz.answers)
   const currentQuestionIndex = useSelector((state) => state.quiz.currentQuestionIndex)
 
-console.log(answers)
   const dispatch = useDispatch() 
 
-  const onSubmitAnswer = () => {
-    dispatch(quiz.actions.goToNextQuestion())
-  }
+  
 
   const onAnswerSelection = (index) => {
     dispatch(quiz.actions.submitAnswer( { questionId: question.id, answerIndex: index} ))
@@ -58,9 +57,7 @@ console.log(answers)
           onClick={() => onAnswerSelection(index)}> {option} 
          </button> 
         )}
-        <button onClick= {onSubmitAnswer}>
-          Check Answer
-        </button>
+        <NextQuestionButton />
       </div>
      : 
      <Summary />}
