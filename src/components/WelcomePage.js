@@ -13,7 +13,7 @@ export const WelcomePage = () => {
     <>
     { !startQuiz ?  
       <div>
-        hello 
+        Hej 
         <button onClick={ handleStartQuiz}> START QUIZ</button>
       </div>
     : 
