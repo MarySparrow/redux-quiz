@@ -1,0 +1,11 @@
+.summary-container {
+  text-align: center;
+  border: 2px solid blue; 
+  padding: 50px 100px;
+  border-radius: 20px;
+  /* background-image: url("./images/summaryphoto.png"); */
+}
+.summary-image {
+  border: 2px solid #fff;
+  /* background-image: url(./images/summaryphoto.png); */
+}
