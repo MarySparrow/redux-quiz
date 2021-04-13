@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+ 
 import { quiz } from '../reducers/quiz'
 import { CurrentQuestion } from './CurrentQuestion'
 
